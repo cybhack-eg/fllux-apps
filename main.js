@@ -17,7 +17,7 @@ function createAppWindow() {
   
   const LOGIN_URL = 'https://fllux.org/login'
   const ROOT_URLS = new Set(['https://fllux.org', 'https://fllux.org/'])
-  const iconPath = path.join(__dirname, 'icon.png')
+  const iconPath = path.join(__dirname, 'build', 'icon.png')
   const appIcon = nativeImage.createFromPath(iconPath)
   const isMac = process.platform === 'darwin'
   const win = new BrowserWindow({
@@ -360,7 +360,7 @@ function createAppWindow() {
 
 function createInstallerWindow(next) {
   Menu.setApplicationMenu(null)
-  const iconPath = path.join(__dirname, 'icon.png')
+  const iconPath = path.join(__dirname, 'build', 'icon.png')
   const win = new BrowserWindow({
     width: 640,
     height: 420,
