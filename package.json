@@ -1,0 +1,73 @@
+{
+  "name": "fllux-electron",
+  "version": "1.0.0",
+  "private": true,
+  "productName": "FLLUX Desktop",
+  "author": "FLLUX",
+  "description": "واجهة سطح مكتب آمنة تعمل كـ WebView لنظام FLLUX عبر الإنترنت",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder -wml",
+    "dist:win": "node ./scripts/prepare-eula.js && cross-env ELECTRON_CACHE=./.electron-cache ELECTRON_BUILDER_CACHE=./.electron-builder-cache electron-builder -w",
+    "dist:mac": "cross-env ELECTRON_CACHE=./.electron-cache ELECTRON_BUILDER_CACHE=./.electron-builder-cache electron-builder -m",
+    "dist:linux": "cross-env ELECTRON_CACHE=./.electron-cache ELECTRON_BUILDER_CACHE=./.electron-builder-cache electron-builder -l"
+  },
+  "build": {
+    "appId": "org.fllux.desktop",
+    "directories": {
+      "output": "dist_release"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "shell.html",
+      "installer/**",
+      "package.json",
+      "icon.png"
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "cybhack-eg",
+        "repo": "fllux-apps"
+      }
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ],
+      "icon": "icon.png",
+      "compression": "maximum",
+      "publisherName": "FLLUX",
+      "artifactName": "FLLUX-Setup-${version}.exe"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "icon.png",
+      "category": "public.app-category.productivity"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ],
+      "icon": "icon.png",
+      "category": "Office;Productivity;"
+    },
+    "nsis": {
+      "oneClick": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "runAfterFinish": true,
+      "installerLanguages": [
+        "en_US"
+      ]
+    }
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}

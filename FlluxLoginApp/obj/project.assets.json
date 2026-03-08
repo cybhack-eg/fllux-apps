@@ -1,0 +1,161 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0-windows10.0.19041": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0-windows10.0.19041": [
+      "Microsoft.Web.WebView2 >= 1.0.2210.55"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\cybha\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\cybha\\Desktop\\app\\flluxapp\\FlluxLoginApp\\FlluxLoginApp.csproj",
+      "projectName": "FlluxLoginApp",
+      "projectPath": "C:\\Users\\cybha\\Desktop\\app\\flluxapp\\FlluxLoginApp\\FlluxLoginApp.csproj",
+      "packagesPath": "C:\\Users\\cybha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cybha\\Desktop\\app\\flluxapp\\FlluxLoginApp\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\cybha\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0-windows10.0.19041.0"
+      ],
+      "frameworks": {
+        "net8.0-windows10.0.19041": {
+          "targetAlias": "net8.0-windows10.0.19041.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "10.0.100"
+    },
+    "frameworks": {
+      "net8.0-windows10.0.19041": {
+        "targetAlias": "net8.0-windows10.0.19041.0",
+        "dependencies": {
+          "Microsoft.Web.WebView2": {
+            "target": "Package",
+            "version": "[1.0.2210.55, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[8.0.24, 8.0.24]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          },
+          {
+            "name": "Microsoft.Windows.SDK.NET.Ref",
+            "version": "[10.0.19041.57, 10.0.19041.57]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[8.0.24, 8.0.24]"
+          }
+        ],
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.Windows.SDK.NET.Ref.Windows": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Web.WebView2 (>= 1.0.2210.55)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.Web.WebView2",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NETCore.App.Ref (= 8.0.24)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.NETCore.App.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.WindowsDesktop.App.Ref (= 8.0.24)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.WindowsDesktop.App.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.AspNetCore.App.Ref (= 8.0.24)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.AspNetCore.App.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.NETCore.App.Host.win-x64 (= 8.0.24)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.NETCore.App.Host.win-x64",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    },
+    {
+      "code": "NU1100",
+      "level": "Error",
+      "message": "Unable to resolve 'Microsoft.Windows.SDK.NET.Ref (= 10.0.19041.57)' for 'net8.0-windows10.0.19041'.",
+      "libraryId": "Microsoft.Windows.SDK.NET.Ref",
+      "targetGraphs": [
+        "net8.0-windows10.0.19041"
+      ]
+    }
+  ]
+}

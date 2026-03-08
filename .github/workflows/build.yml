@@ -1,0 +1,35 @@
+name: Build/Release FLLUX Desktop
+
+on:
+  push:
+    tags:
+      - 'v*' # سيتم البناء عند إضافة Tag يبدأ بـ v (مثل v1.0.0)
+  workflow_dispatch: # يتيح لك تشغيل البناء يدوياً من صفحة GitHub
+
+jobs:
+  release:
+    runs-on: ${{ matrix.os }}
+
+    strategy:
+      matrix:
+        os: [windows-latest, macos-latest, ubuntu-latest]
+
+    steps:
+      - name: Check out git repository
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build/Release Electron App
+        uses: samuelmeuli/action-electron-builder@v1
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          release: true
+          # سيتم استخدام الإعدادات من package.json تلقائياً

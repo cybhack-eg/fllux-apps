@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FLLUX Installer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">
+      <img src="../icon.png" alt="FLLUX" class="logo">
+      <div class="title">FLLUX Desktop</div>
+      <div class="subtitle">واجهة WebView آمنة للوصول إلى النظام عبر الإنترنت</div>
+    </div>
+    <div class="panel">
+      <div class="policy">
+        باستخدامك للتطبيق أنت توافق على شروط الاستخدام وسياسة الخصوصية.
+        <a href="https://fllux.org/terms-of-use">الشروط</a> ·
+        <a href="https://fllux.org/privacy-policy">الخصوصية</a>
+      </div>
+      <label class="agree">
+        <input type="checkbox" id="agree">
+        أوافق على الشروط وسياسة الخصوصية
+      </label>
+      <button id="install" disabled>تثبيت وبدء الاستخدام</button>
+      <div class="progress">
+        <div class="bar" id="bar" style="width:0%"></div>
+      </div>
+      <div class="note">يتطلب اتصالاً بالإنترنت وحسابًا مفعّلًا.</div>
+    </div>
+  </div>
+  <script src="renderer.js"></script>
+</body>
+</html>
