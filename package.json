@@ -47,6 +47,7 @@
     },
     "mac": {
       "target": "dmg",
+      "icon": null,
       "category": "public.app-category.productivity"
     },
     "linux": {
