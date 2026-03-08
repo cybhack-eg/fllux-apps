@@ -31,9 +31,7 @@
     ],
     "publish": [
       {
-        "provider": "github",
-        "owner": "cybhack-eg",
-        "repo": "fllux-apps"
+        "provider": "github"
       }
     ],
     "win": {
