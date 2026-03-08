@@ -1,0 +1,10 @@
+node_modules/
+dist/
+dist_release/
+.electron-builder-cache/
+.electron-cache/
+*.log
+electron-user-data/
+electron-logs/
+build-last.log
+EULA-utf16le.txt
