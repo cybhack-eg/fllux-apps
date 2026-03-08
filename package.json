@@ -27,7 +27,7 @@
       "shell.html",
       "installer/**",
       "package.json",
-      "build/icon.png"
+      "assets/icon.png"
     ],
     "publish": [
       {
@@ -40,7 +40,7 @@
       "target": [
         "nsis"
       ],
-      "icon": "build/icon.png",
+      "icon": "assets/icon.png",
       "compression": "maximum",
       "publisherName": "FLLUX",
       "artifactName": "FLLUX-Setup-${version}.exe"
@@ -56,7 +56,7 @@
         "deb"
       ],
       "maintainer": "FLLUX <info@fllux.org>",
-      "icon": "build/icon.png",
+      "icon": "assets/icon.png",
       "category": "Office;Productivity;"
     },
     "nsis": {
@@ -66,7 +66,8 @@
       "runAfterFinish": true,
       "installerLanguages": [
         "en_US"
-      ]
+      ],
+      "include": "assets/installer.nsh"
     }
   },
   "devDependencies": {
