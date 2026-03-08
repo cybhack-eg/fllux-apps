@@ -16,7 +16,7 @@ jobs:
     strategy:
       fail-fast: false # إذا فشل الماك، لا يتم إلغاء الويندوز واللينكس
       matrix:
-        os: [windows-latest, macos-13, ubuntu-latest] # استخدمنا macos-13 لضمان استقرار البناء
+        os: [windows-latest, macos-latest, ubuntu-latest] # استخدمنا macos-latest لتجنب خطأ التوافق في GitHub
 
     steps:
       - name: Check out git repository
