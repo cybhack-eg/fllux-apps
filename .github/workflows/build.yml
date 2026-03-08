@@ -6,6 +6,9 @@ on:
       - 'v*'
   workflow_dispatch:
 
+permissions:
+  contents: write # تسمح للـ Workflow بإنشاء Release ورفع الملفات
+
 jobs:
   release:
     runs-on: ${{ matrix.os }}
