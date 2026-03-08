@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "productName": "FLLUX Desktop",
-  "author": "FLLUX",
+  "author": {
+    "name": "FLLUX",
+    "email": "info@fllux.org"
+  },
   "description": "واجهة سطح مكتب آمنة تعمل كـ WebView لنظام FLLUX عبر الإنترنت",
   "main": "main.js",
   "scripts": {
@@ -52,6 +55,7 @@
         "AppImage",
         "deb"
       ],
+      "maintainer": "FLLUX <info@fllux.org>",
       "icon": "icon.png",
       "category": "Office;Productivity;"
     },
